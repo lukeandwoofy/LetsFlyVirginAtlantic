@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virgin Atlantic Aircraft Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <div id="login" class="login">
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div id="main" class="main" style="display: none;">
+        <h1>Virgin Atlantic Aircraft Tracker</h1>
+        <div id="map" style="height: 500px;"></div>
+        <table id="flightsTable">
+            <thead>
+                <tr>
+                    <th>Callsign</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    <th>Altitude (ft)</th>
+                    <th>Velocity (m/s)</th>
+                    <th>Heading (°)</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button id="refresh">Refresh</button>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
