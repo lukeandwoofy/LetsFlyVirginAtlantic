@@ -1,0 +1,58 @@
+body {
+    background-image: url('https://www.virgin.com/sites/default/files/styles/hero_mobile/public/2023-03/Virgin-Atlantic-A350-winglet.jpg'); /* Replace with a Virgin Atlantic backdrop image URL */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login input, .login button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 200px;
+}
+
+.main {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+}
+
+button#refresh {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #ff0000; /* Virgin red */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
